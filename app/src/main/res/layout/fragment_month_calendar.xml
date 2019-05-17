@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewmodel" type="com.example.calendar.view.month.MonthFragmentViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/mcv_month"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                monthEvent="@{viewmodel.dates}"
+                app:mcv_tileSize="60dp"
+                app:mcv_dateTextAppearance="@style/CustomTextAppearence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_month_add_schedule"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:backgroundTint="@color/colorAddSchedule"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
