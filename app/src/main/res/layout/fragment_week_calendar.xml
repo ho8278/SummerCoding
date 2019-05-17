@@ -15,7 +15,6 @@
                 android:id="@+id/mcv_week"
                 app:layout_constraintTop_toTopOf="parent"
                 app:mcv_calendarMode="week"
-                app:mcv_tileSize="60dp"
                 weekEvent="@{viewmodel.dates}"
                 app:mcv_dateTextAppearance="@style/CustomTextAppearence"
                 android:layout_width="match_parent"

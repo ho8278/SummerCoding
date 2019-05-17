@@ -13,10 +13,7 @@
         <com.prolificinteractive.materialcalendarview.MaterialCalendarView
                 android:id="@+id/mcv_month"
                 app:layout_constraintTop_toTopOf="parent"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 monthEvent="@{viewmodel.dates}"
-                app:mcv_tileSize="60dp"
                 app:mcv_dateTextAppearance="@style/CustomTextAppearence"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
