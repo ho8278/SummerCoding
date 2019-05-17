@@ -3,6 +3,7 @@ package com.example.calendar.view.addschedule
 import android.os.Bundle
 import android.util.Log
 import android.view.Window
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.calendar.R
@@ -10,7 +11,7 @@ import com.example.calendar.databinding.ActivityAddScheduleBinding
 import com.example.calendar.view.main.AppInitialize
 import kotlinx.android.synthetic.main.activity_add_schedule.*
 
-class AddSchedule:AppCompatActivity(){
+class AddSchedule:AppCompatActivity(),SaveResult{
 
     private val TAG = AddSchedule::class.java.simpleName
     private lateinit var binding: ActivityAddScheduleBinding
@@ -24,9 +25,13 @@ class AddSchedule:AppCompatActivity(){
 
         initView()
         val data = intent.getStringExtra("date")
-        viewModel = AddScheduleViewModel(AppInitialize.dataSource,data)
+        viewModel = AddScheduleViewModel(AppInitialize.dataSource,data, this)
         binding.viewmodel = viewModel
 
+    }
+
+    override fun showToast(str: String) {
+        Toast.makeText(this,str,Toast.LENGTH_SHORT).show()
     }
 
     private fun initView(){
