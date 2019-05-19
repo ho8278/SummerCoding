@@ -11,5 +11,9 @@
     <style name="CustomTextAppearence" parent="TextAppearance.MaterialCalendarWidget.Date">
         <item name="android:textColor">@drawable/selector_date_text</item>
     </style>
+    
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_theme</item>
+    </style>
 
 </resources>
