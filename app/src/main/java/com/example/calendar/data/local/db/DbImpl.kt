@@ -31,12 +31,6 @@ class DbImpl:DbHelper{
             .subscribe()
     }
 
-    override fun loadSchedule(date: String): Single<List<Schedule>> {
-        return appDataBase.scheduleDao.loadSchedule(date)
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-    }
-
     override fun loadSchedule(): Single<List<Schedule>> {
         return appDataBase.scheduleDao.loadSchedule()
             .subscribeOn(Schedulers.io())

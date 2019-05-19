@@ -1,9 +1,9 @@
 package com.example.calendar.view.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.calendar.R
 import com.example.calendar.databinding.ActivityMainBinding
@@ -11,10 +11,7 @@ import com.example.calendar.view.date.DateFragment
 import com.example.calendar.view.month.MonthFragment
 import com.example.calendar.view.week.WeekFragment
 import com.google.android.material.tabs.TabLayout
-import com.prolificinteractive.materialcalendarview.CalendarDay
-import kotlinx.android.synthetic.main.activity_add_schedule.*
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 

@@ -11,15 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.calendar.R
 import com.example.calendar.databinding.FragmentDateCalendarBinding
-import com.example.calendar.databinding.FragmentMonthCalendarBinding
-import com.example.calendar.view.SelectionDecorator
 import com.example.calendar.view.addschedule.AddSchedule
 import com.example.calendar.view.main.AppInitialize
-import com.example.calendar.view.month.MonthFragment
-import com.example.calendar.view.month.MonthFragmentViewModel
-import com.prolificinteractive.materialcalendarview.CalendarDay
 import kotlinx.android.synthetic.main.fragment_date_calendar.*
-import kotlinx.android.synthetic.main.fragment_week_calendar.*
 
 class DateFragment : Fragment() {
 

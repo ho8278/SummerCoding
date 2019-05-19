@@ -13,8 +13,6 @@ import com.example.calendar.databinding.FragmentWeekCalendarBinding
 import com.example.calendar.view.SelectionDecorator
 import com.example.calendar.view.addschedule.AddSchedule
 import com.example.calendar.view.main.AppInitialize
-import com.example.calendar.view.month.MonthFragment
-import com.example.calendar.view.month.MonthFragmentViewModel
 import com.prolificinteractive.materialcalendarview.CalendarDay
 import kotlinx.android.synthetic.main.fragment_week_calendar.*
 

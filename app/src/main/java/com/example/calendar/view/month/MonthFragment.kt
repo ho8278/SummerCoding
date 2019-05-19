@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.calendar.R
 import com.example.calendar.databinding.FragmentMonthCalendarBinding
 import com.example.calendar.view.SelectionDecorator
@@ -16,8 +15,6 @@ import com.example.calendar.view.addschedule.AddSchedule
 import com.example.calendar.view.main.AppInitialize
 import com.prolificinteractive.materialcalendarview.CalendarDay
 import kotlinx.android.synthetic.main.fragment_month_calendar.*
-import kotlinx.android.synthetic.main.fragment_week_calendar.*
-import java.text.SimpleDateFormat
 
 class MonthFragment : Fragment() {
 

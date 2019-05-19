@@ -1,6 +1,5 @@
 package com.example.calendar.view.month
 
-import com.example.calendar.view.LineSpan
 import com.prolificinteractive.materialcalendarview.CalendarDay
 import com.prolificinteractive.materialcalendarview.DayViewDecorator
 import com.prolificinteractive.materialcalendarview.DayViewFacade

@@ -1,8 +1,6 @@
 package com.example.calendar.data
 
 import android.content.Context
-import android.content.SharedPreferences
-import android.preference.PreferenceManager
 import com.example.calendar.data.local.db.DbHelper
 import com.example.calendar.data.local.db.DbImpl
 import com.example.calendar.data.local.pref.PreferenceHelper
@@ -35,10 +33,6 @@ class DataManager():DataSource{
 
     override fun insertSchedule(schedule: Schedule) {
         dbHelper.insertSchedule(schedule)
-    }
-
-    override fun loadSchedule(date: String): Single<List<Schedule>> {
-        return dbHelper.loadSchedule(date)
     }
 
     override fun loadSchedule(): Single<List<Schedule>> {

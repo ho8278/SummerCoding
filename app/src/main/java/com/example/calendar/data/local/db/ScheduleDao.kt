@@ -11,10 +11,6 @@ interface ScheduleDao{
     @Insert
     fun insertSchedule(schedule: Schedule)
 
-    @Query("select * from schedule where schedule.date=:date")
-    fun loadSchedule(date:String): Single<List<Schedule>>
-
-
     @Query("select * from schedule")
     fun loadSchedule(): Single<List<Schedule>>
 }

@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.databinding.ObservableArrayList
 import androidx.databinding.ObservableField
 import com.example.calendar.data.DataSource
-import com.example.calendar.data.model.Schedule
 import com.prolificinteractive.materialcalendarview.CalendarDay
 import io.reactivex.disposables.CompositeDisposable
 import java.text.SimpleDateFormat
